@@ -12,7 +12,7 @@ kubelet:
         - --allow-privileged=true
         - --register-node=true
         - --cloud-provider=rancher
-        - --feature-gates="Accelerators=true"
+        - --feature-gates=Accelerators=true
         - --healthz-bind-address=0.0.0.0
         - --cluster-dns=169.254.169.250
         - --cluster-domain=cluster.local
