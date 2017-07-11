@@ -14,6 +14,7 @@ kubelet:
         - --allow-privileged=true
         - --register-node=true
         - --cloud-provider=${CLOUD_PROVIDER}
+        - --feature-gates="Accelerators=true"
         - --healthz-bind-address=0.0.0.0
         - --cluster-dns=10.43.0.10
         - --cluster-domain=cluster.local
